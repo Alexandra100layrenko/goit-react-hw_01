@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.module.css'
+import Profile from '../Profile/Profile'
+import styles from './App.module.css'
+
 import userData from '../../userData.json'
 
 export default function App() {
   return (
-    <>
+    <div>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -14,6 +13,6 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </>
+    </div>
   )
 }
