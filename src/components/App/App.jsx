@@ -1,6 +1,4 @@
 import Profile from '../Profile/Profile'
-import styles from './App.module.css'
-
 import userData from '../../userData.json'
 
 export default function App() {
