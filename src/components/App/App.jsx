@@ -1,5 +1,6 @@
-import Description from '../Description/Description';
+import Description from '../Description/description';
 import Options from '../Options/Options';
+import Feedback from '../Feedback/Feedback';
 import Test from '../Test/Test';
 import Profile from '../Profile/Profile';
 import FriendList from '../FriendList/FriendList';
@@ -8,7 +9,6 @@ import option from '../../option.json';
 import userData from '../../userData.json';
 import friends from '../../friends.json';
 import transactions from '../../transactions.json';
-import Options from '../Options/Options';
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
         neutral={option.neutral}
         bad={option.bad}
       />
-      <Test />
+      <Feedback />
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -29,6 +29,7 @@ export default function App() {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
+      <Test />
     </div>
   )
 }
